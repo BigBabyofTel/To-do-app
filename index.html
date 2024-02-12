@@ -7,21 +7,18 @@
     <title>AOI</title>
   </head>
   <body>
-    <div class="h-screen flex justify-evenly ">
-    <div class="border-4 border-blue-100 h-full w-1/4 p-3 shadow-2xl shadow-blue-700 rounded-3xl">
-    <h1 class=" text-xl text-center">Task Bank</h1><div class=" m-3 border-2 border-blue-200 h-1/6"></div></div>
-    <div class="border-4 border-blue-100 w-1/4 h-full p-3 shadow-2xl  shadow-blue-700 rounded-3xl">
-      <h1 class=" text-xl text-center">Current Task</h1></div>
-      <div class="border-4 border-blue-100 w-1/4 h-full p-3 shadow-2xl  shadow-blue-700 rounded-3xl">
-        <h1 class=" text-xl text-center">Add a Task</h1>
-        <div class=" m-5 h-auto flex flex-col">
-          <input type="text" placeholder="Task Name" class="mb-2">
-          <input type="date" class="mb-2">
-          <input type="text" placeholder="Task 1" class="mb-2">
-          <input type="text" placeholder="Details" class="mb-2">
-          <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-transparent rounded">Create Task</button>
-        </div>
+    <div class="mt-5 h-auto flex justify-center">
+      <div class="border-4 border-blue-100 w-6/12 p-3 shadow-lg  shadow-blue-700 rounded-3xl">
+        <h1 class=" text-xl text-center">Aoi</h1>
+        <section class=" m-5  flex flex-col">
+          <input type="text" id="taskNameInput" placeholder="Task Name" class="mb-3">
+          <input type="text" id="task-details" placeholder="Details" class="mb-3">
+          <button class="mt-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-2 border border-blue-500 hover:border-transparent rounded">Create Task</button>
+        </section>
+        <section id="task-container" class="border-2 m-5 w-auto">
+      </section>
       </div>
+      
       </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
