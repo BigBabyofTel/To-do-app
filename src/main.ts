@@ -15,18 +15,16 @@ function addTask(): void {
     };
     //adds task object to the tasks array
     tasks.push(task);
-    tasks.forEach((task) => {
-      //create elements for each task
-      const title = document.createElement("h3");
-      const description = document.createElement("p");
-      //set elements to inputs
-      title.innerHTML = task.title;
-      description.innerHTML = task.description;
-      //append to display div
-      storedTask.appendChild(title);
-      storedTask.appendChild(description);
-    });
-    
+
+    //create elements for each task
+    const title = document.createElement("h3");
+    const description = document.createElement("p");
+    //set elements to inputs
+    title.innerHTML = task.title;
+    description.innerHTML = task.description;
+    //append to display div
+    storedTask.appendChild(title);
+    storedTask.appendChild(description);
   }
   taskInput.value = "";
   taskDetails.value = "";
