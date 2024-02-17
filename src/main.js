@@ -2,6 +2,7 @@ var taskInput = document.getElementById("task-name");
 var taskDetails = document.getElementById("task-details");
 ;
 var storedTask = document.getElementById("task-container");
+var btn = document.getElementById("button");
 var tasks = [];
 function addTask() {
     if (!taskInput.value || !taskDetails.value) {
@@ -37,3 +38,4 @@ function displayTasks() {
         storedTask.appendChild(description);
     });
 }
+btn.addEventListener('click', addTask);

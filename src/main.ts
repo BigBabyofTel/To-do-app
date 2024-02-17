@@ -6,7 +6,8 @@ interface Task {
 
 const taskInput = document.getElementById("task-name") as HTMLInputElement;
 const taskDetails = document.getElementById("task-details") as HTMLInputElement;;
-const storedTask: HTMLElement = document.getElementById("task-container")!;
+const storedTask = document.getElementById("task-container") as HTMLElement;
+const btn = document.getElementById("button") as HTMLButtonElement;
 
 const tasks: Task[] = [];
 
@@ -51,3 +52,4 @@ function displayTasks(): void {
     storedTask.appendChild(description);
   });
 }
+btn.addEventListener('click', addTask);
